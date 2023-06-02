@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kot3Raihanefelmaulana</string>
+    <string name="title">Transaksi Gaji</string>
+    <string name="id">Id Karyawan</string>
+    <string name="nama">Nama Karyawan</string>
+    <string name="gaji">Gaji Poko</string>
+    <string name="tnjngn">Tunjangan</string>
+    <string name="ja">Jumlah Anak</string>
+    <string name="submit">Submit</string>
+    <string name="output">Output</string>
+
+</resources>

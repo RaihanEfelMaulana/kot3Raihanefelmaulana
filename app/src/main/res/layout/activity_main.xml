@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Gaji"
+            android:id="@+id/txttitle"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tbl1"
+            android:layout_below="@id/txttitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtid"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/id"
+                    android:textColor="@color/red"/>
+
+                <EditText
+                    android:id="@+id/editid"
+                    android:hint="Input Id Karyawan"
+                    android:textSize="15sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtnama"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/nama"
+                    android:textColor="@color/red"/>
+
+                <EditText
+                    android:id="@+id/editnama"
+                    android:hint="Input Nama Karyawan"
+                    android:textSize="15sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtgaji"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/gaji"
+                    android:textColor="@color/red"/>
+
+                <EditText
+                    android:id="@+id/editgaji"
+                    android:hint="Input Gaji Karyawan"
+                    android:textSize="15sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtharga"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tnjngn"
+                    android:textColor="@color/red"/>
+
+                <EditText
+                    android:id="@+id/edittunjangan"
+                    android:hint="Input Tunjangan Karyawan"
+                    android:textSize="15sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtjumlahanak"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ja"
+                    android:textColor="@color/red"/>
+
+                <Spinner
+                    android:id="@+id/editja"
+                    android:hint="Input jumlah anak"
+                    android:textSize="15sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_below="@id/tbl1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnsubmit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtoutput"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/output"
+            android:layout_below="@id/btnsubmit"/>
+
+    </RelativeLayout>
+</ScrollView>
